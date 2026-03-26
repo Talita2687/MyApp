@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".MenuPrincipalActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20sp"
-        android:text="Login"
+        android:text="Menu Principal"
         android:textColor="#3F51B5"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -23,6 +23,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/baseline_arrow_back"/>
+
 
 
 </LinearLayout>
