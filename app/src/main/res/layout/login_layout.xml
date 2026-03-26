@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <TextView
@@ -19,10 +21,22 @@
 
     <ImageView
         android:id="@+id/imgVoltar"
-        android:layout_gravity="center_horizontal"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/baseline_arrow_back"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/baseline_arrow_back" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtUsuario"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/baseline_email"
+        app:endIconMode="clear_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>
